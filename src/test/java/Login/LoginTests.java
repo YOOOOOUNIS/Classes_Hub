@@ -16,7 +16,15 @@ public class LoginTests extends BaseTests {
     }
 
     @Test
-    public void testunsuccessfulLogin(){
+    public void testunsuccessfulLogin_incorrectEmail(){
+        LoginPage loginPage = homePage.clickLoginButton();
+        loginPage.setUsernameField("abdalrahan@abdalrahan.com");
+        loginPage.setPasswordField("Test@1234");
+        loginPage.clickLoginButton();
+    }
+
+    @Test
+    public void testunsuccessfulLogin_incorrectPass(){
         LoginPage loginPage = homePage.clickLoginButton();
         loginPage.setUsernameField("abdalrahan@abdalrahan.com");
         loginPage.setPasswordField("Test@1234");
