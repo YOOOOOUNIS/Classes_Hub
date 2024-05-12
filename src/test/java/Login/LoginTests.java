@@ -12,7 +12,7 @@ public class LoginTests extends BaseTests {
         LoginPage loginPage = homePage.clickLoginButton();
         loginPage.setUsernameField("abdalrahan@baianat.com");
         loginPage.setPasswordField("Test@1234");
-        loginPage.clickLoginButton();
+        loginPage.submitLoginButton();
     }
 
     @Test
@@ -20,7 +20,7 @@ public class LoginTests extends BaseTests {
         LoginPage loginPage = homePage.clickLoginButton();
         loginPage.setUsernameField("abdalrahan@abdalrahan.com");
         loginPage.setPasswordField("Test@1234");
-        loginPage.clickLoginButton();
+        loginPage.submitLoginButton();
     }
 
     @Test
@@ -28,6 +28,6 @@ public class LoginTests extends BaseTests {
         LoginPage loginPage = homePage.clickLoginButton();
         loginPage.setUsernameField("abdalrahan@abdalrahan.com");
         loginPage.setPasswordField("Test@1234");
-        loginPage.clickLoginButton();
+        loginPage.submitLoginButton();
     }
 }

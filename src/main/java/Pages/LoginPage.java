@@ -10,14 +10,21 @@ import static utils.Helper.explicitWait;
 public class LoginPage {
     private WebDriver driver;
 
+
+    private By signUpButton = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[2]/form/div[5]/p/a");
     private By usernameField = By.id("email");
     private By passwordField = By.id("password");
-    private By loginButton = By.xpath("//*[@id=\"submit-login\"]");
+    private By submitloginButton = By.xpath("//*[@id=\"submit-login\"]");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
 
+    public SignUpPage clickSignUp(){
+        explicitWait(driver, 10).until(ExpectedConditions.elementToBeClickable(signUpButton));
+        driver.findElement(signUpButton).click();
+        return new SignUpPage(driver);
+    }
 
     public void setUsernameField(String username) {
         explicitWait(driver, 10).until(ExpectedConditions.elementToBeClickable(usernameField));
@@ -29,8 +36,8 @@ public class LoginPage {
         driver.findElement(passwordField).sendKeys(password);
     }
 
-    public void clickLoginButton(){
-        driver.findElement(loginButton).click();
+    public void submitLoginButton(){
+        driver.findElement(submitloginButton).click();
     }
 
 }
