@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27848403-1f6e-4ec5-ad68-f3c7bec9636e" name="Changes" comment="initializing sign up flow and OTP flow">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/SecureAreaPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/TestDataFiles/Login.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/TestDataFiles/SignUp.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/OTPpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/OTPpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Helper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SignUp/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUp/SignUpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SecureAreaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SecureAreaPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignUp/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/SignUpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,40 +56,50 @@
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/baianat/IdeaProjects/Classes_Hub/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JSON"
+    ]
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.SignUpTest.testEnterWronOTP">
-    <configuration name="LoginTests.testSuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/TestDataFiles" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.SignUpTest.testSuccessfulSignUp">
+    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Classes_Hub" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Login.*" />
+          <option name="PATTERN" value="TestPackage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Login" />
-      <option name="MAIN_CLASS_NAME" value="Login.LoginTests" />
-      <option name="METHOD_NAME" value="testSuccessfulLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="TestPackage" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.LoginTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.testunsuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTests.testSuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Classes_Hub" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Login.*" />
+          <option name="PATTERN" value="TestPackage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Login" />
-      <option name="MAIN_CLASS_NAME" value="Login.LoginTests" />
-      <option name="METHOD_NAME" value="testunsuccessfulLogin" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.LoginTests" />
+      <option name="METHOD_NAME" value="testSuccessfulLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -100,12 +111,12 @@
       <module name="Classes_Hub" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Login.*" />
+          <option name="PATTERN" value="TestPackage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Login" />
-      <option name="MAIN_CLASS_NAME" value="Login.LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.LoginTests" />
       <option name="METHOD_NAME" value="testunsuccessfulLogin_incorrectEmail" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -118,12 +129,12 @@
       <module name="Classes_Hub" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SignUp.*" />
+          <option name="PATTERN" value="TestPackage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SignUp" />
-      <option name="MAIN_CLASS_NAME" value="SignUp.SignUpTest" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.SignUpTest" />
       <option name="METHOD_NAME" value="testEnterWronOTP" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -136,12 +147,12 @@
       <module name="Classes_Hub" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SignUp.*" />
+          <option name="PATTERN" value="TestPackage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SignUp" />
-      <option name="MAIN_CLASS_NAME" value="SignUp.SignUpTest" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.SignUpTest" />
       <option name="METHOD_NAME" value="testSuccessfulSignUp" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -152,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SignUpTest.testSuccessfulSignUp" />
         <item itemvalue="TestNG.SignUpTest.testEnterWronOTP" />
         <item itemvalue="TestNG.LoginTests.testunsuccessfulLogin_incorrectEmail" />
-        <item itemvalue="TestNG.SignUpTest.testSuccessfulSignUp" />
+        <item itemvalue="TestNG.LoginTests" />
         <item itemvalue="TestNG.LoginTests.testSuccessfulLogin" />
-        <item itemvalue="TestNG.LoginTests.testunsuccessfulLogin" />
       </list>
     </recent_temporary>
   </component>

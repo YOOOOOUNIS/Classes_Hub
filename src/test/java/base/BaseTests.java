@@ -8,14 +8,12 @@ import org.testng.annotations.*;
 import java.util.Random;
 
 public class BaseTests {
-    private WebDriver driver;
+    public WebDriver driver;
     protected HomePage homePage;
 
 
 //    site url
     private static String url = "https://staging.classeshub.com/";
-
-
 
 
 
@@ -29,6 +27,8 @@ public class BaseTests {
         homePage = new HomePage(driver);
     }
 
+
+
     @AfterMethod
     public void closeBrowser() {
         driver.quit();
@@ -39,7 +39,7 @@ public class BaseTests {
 
 //    create random email
     public class RandomEmailGenerator {
-        private static final String[] domains = {"gmail.com", "yahoo.com", "hotmail.com", "example.com", "outlook.com"};
+        private static final String[] domains = {"gmail.com", "yahoo.com", "hotmail.com",  "outlook.com"};
         private static final String[] characters = {"abcdefghijklmnopqrstuvwxyz", "0123456789"};
 
 

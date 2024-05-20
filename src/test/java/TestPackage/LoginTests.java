@@ -1,11 +1,15 @@
-package Login;
-
+package TestPackage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import base.BaseTests;
+import io.qameta.allure.Step;
+import org.json.simple.parser.ParseException;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+
 public class LoginTests extends BaseTests {
+
 
     @Test
     public void testSuccessfulLogin() {
@@ -16,7 +20,7 @@ public class LoginTests extends BaseTests {
     }
 
     @Test
-    public void testunsuccessfulLogin_incorrectEmail(){
+    public void testUnsuccessfulLogin_incorrectEmail(){
         LoginPage loginPage = homePage.clickLoginButton();
         loginPage.setUsernameField("abdalrahan@abdalrahan.com");
         loginPage.setPasswordField("Test@1234");
@@ -24,7 +28,7 @@ public class LoginTests extends BaseTests {
     }
 
     @Test
-    public void testunsuccessfulLogin_incorrectPass(){
+    public void testUnsuccessfulLogin_incorrectPass(){
         LoginPage loginPage = homePage.clickLoginButton();
         loginPage.setUsernameField("abdalrahan@abdalrahan.com");
         loginPage.setPasswordField("Test@1234");
