@@ -3,7 +3,6 @@ import Pages.HomePage;
 import Pages.LoginPage;
 import base.BaseTests;
 import io.qameta.allure.Step;
-import org.json.simple.parser.ParseException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

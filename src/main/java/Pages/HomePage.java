@@ -1,8 +1,12 @@
 package Pages;
 
+import dev.failsafe.internal.util.Assert;
+import org.checkerframework.dataflow.qual.AssertMethod;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import utils.Helper;
+
 
 import static utils.Helper.explicitWait;
 
@@ -23,7 +27,16 @@ public class HomePage {
         return new LoginPage(driver);
     }
 
-    public void verifyHomePageIsLoaded(){
-        driver.findElement(titleLocator).getText();
+    private By HomePageCheckElement = By.id("homeIntroTitle");
+
+
+    public void verifyThatHomePageIsLoaded(){
+
+        Assert.isTrue(explicitWait(driver, 10).
+                until(ExpectedConditions.elementToBeClickable(HomePageCheckElement)).getText().contains(" grow and advance in design"),
+                "ALL VALID DATA scenario is corrupted");
+
     }
+
+
 }

@@ -5,14 +5,104 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27848403-1f6e-4ec5-ad68-f3c7bec9636e" name="Changes" comment="initializing sign up flow and OTP flow">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/TestDataFiles/Login.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/TestDataFiles/SignUp.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/0074c664-326d-4bdd-a21d-2b5e7e656d1b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/018a1f28-c4b8-48b3-8319-d8e84f05842d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/02aef86d-3fbe-4826-b969-a72fe62fddc9-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/04597b86-6a93-4098-b000-cb58d965f008-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/04df26b9-6ba4-4b3a-96ff-238424efbc0a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/053826f2-293b-452f-ad04-29ac25ad3fe2-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/0d0abafb-ff6e-42db-9460-138d852e8148-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/1195cd26-30d4-407f-a358-b4eaf2ea2184-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/14259306-b21f-483c-9588-cb3822465bfc-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/15b4e3dd-029e-42d6-b5fd-8881a139d89c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/1c407b70-2d88-4764-b40d-e20da00efbb5-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/1f2b8e29-3b3e-4a07-ab26-d8fe15f0694d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/39ae2f52-a890-4768-8264-c306d5c6c968-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/3bd4b8bb-85bc-48f2-8f81-6abf45554153-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/3c60494d-54d1-419d-be2a-5f16ffe74792-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/3ddf1460-8455-4dd4-9800-321ef766947d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/3e1dd6d0-5dd4-479a-94a4-57e494c2602f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/4a6b428f-7b9d-44c5-9033-d120fab78379-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/53d66e56-1d27-4c75-90ed-df673ad57b46-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/54df7acc-5bce-46e0-871f-bdc0417bf8f1-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/59d5151e-0e00-45ba-9741-54bbacb1f3ea-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/5d54f514-35f9-4cc1-acf1-4a5adbc309ca-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/60768263-4b39-4142-a3da-6c85b9313fea-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/6589b598-8364-4ece-8efb-4de9b4868cf2-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/699a1025-63aa-4929-9ef5-23748e8f3a49-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/6beeafa6-ce0b-402a-98c1-4b3faaf3c4aa-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/6c4646be-9ce9-458e-bf0a-efc031ea1a7d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/6ca051b0-34c7-4efd-bc59-161b254d0a5b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/6f5119fe-d1f1-4e5f-8e99-d0b5872a9f85-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/7078b29a-9694-43ef-bf9e-b83648b904af-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/70b3a400-a7d8-415a-802c-d52b24448ae1-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/71bb10fa-74f5-424d-9b2c-6e5a434fa9d6-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/75e9642a-7263-472b-aca8-ec8a9c63d09d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/7683f930-05e2-4ae4-aae9-c36e37617856-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/782f2524-8a8a-48b9-a6be-842231f8355e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/7ef8c8a2-b9a9-44f9-aa42-4f8122d8e118-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/7f7b572a-5a93-42b3-a41a-bfdc3683e6c7-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/7f9a8adc-3b1a-4482-8024-0cc538c46637-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/801eb145-d971-4400-9387-f45b9998bcbc-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/812e9eba-f18e-4cbc-b2c2-25799c68503e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/838a3e8a-4d4d-4bcd-8bfc-32374af836bd-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/844be6d8-0b9b-4f94-b50f-c2e20e6b2427-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/8953403f-cc48-4c13-8f24-28fedff948b4-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/8c1c7182-6822-4ea6-8af3-671e1b992478-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/8c72fbe5-a5d9-4b3b-b486-267266e3b5f6-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/900cf444-125e-476a-ada9-99337f9f4de4-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/917be683-58a3-494c-bf56-e49154380107-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/964d4ba7-357f-4e49-9045-833b1cf3f099-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/980f72b3-5dd2-4fd4-9a13-3bcca3274dc3-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/9c20f307-6a77-44d3-bbe7-7c75c3c2ebda-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/9d7d61db-0bbb-478a-b726-ee424dc780f9-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/a329dcc2-78cb-4251-8255-b395819648c1-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/a3ae871a-b9cc-45cb-8d82-45e065660038-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/a5c51471-f428-49b9-8633-bb3fad433883-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/a6439ec0-b25d-4eaa-ad80-d1f28bc85624-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/a86e33eb-efc6-4676-8f52-37640a7e7584-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/aa23a6e4-dfad-4ad1-a96a-34acd89e205b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/acca81ee-a48a-4226-8437-232de495f693-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/aeb56355-94ab-4f52-98e9-212bcae0a591-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/b14f7cdf-acc3-4d50-a409-18285b833ea0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/b1e9e6cf-c2f0-45ab-a7f1-269dc613ea69-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/b228f2ae-108b-4d3f-838a-536f2b495e98-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/b355dce6-0ea3-4948-b9e3-602c36a91e96-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/b36debdc-9b04-4f2e-9826-327a8e906b86-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/b6c98272-b502-4e32-be64-30f5ba23dbea-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/b9671779-0744-4c37-b318-b573754675b2-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/b983b5f4-ac45-4e22-bd95-eae77601a7d7-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/bf18dc4c-3239-48dd-99fd-f67ba27295b9-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/c16eff59-023e-4946-82c4-4cb325b084b8-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/c1810075-c37b-4457-8892-47580d61257e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/c2d08fc3-5d96-4add-be72-e7e8aa0cd48e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/c2de88a2-43e3-4440-876b-dc0698eaa348-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/c3e11def-e3b2-4926-a343-a053c103495b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/c5063559-4678-468e-a38e-8140f0fc6cc0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/d010e637-41cc-4cbb-8df6-6e82fd19bbeb-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/d10a5cb6-453e-4392-9ea7-239b5cc1242e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/d11bcd36-c21f-47c7-93a6-4a4ad6291551-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/d7c2b151-1469-4e77-b89f-b5a2f268ec1b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/e0bcf3a9-554f-41cf-aec0-672a3877ccdd-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/e1a08fcb-18e2-4f7a-a61b-9b1abd0db299-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/e4de3eb1-ae55-4909-9f0e-a15e32655add-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/e8e05e15-17fd-459d-8a78-0a8ff41e1b17-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/ea9d1e4c-f776-48f6-88c7-0b214bd01130-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/eb14ab67-c45c-4a14-8f1b-d511d7b4d6b2-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/ed496aac-0a10-4fdf-aaaf-cf89e091796c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/ed64fb95-6b11-4aad-9901-e9e55e1ec1cd-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/ee54b505-d61e-4faa-8714-0ae70c887223-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/f91be6c3-3287-4768-ba98-af502a29c30f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/ff2a6811-23dc-4c15-b780-157c5d83e2ae-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-Results/ff6e0868-f340-434c-84c8-432bf345b18a-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SecureAreaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SecureAreaPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SignUp/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/SignUpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/OTPpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/OTPpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SecureAreaPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SignUpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/SignUpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,9 +140,13 @@
     "TestNG.LoginTests.testSuccessfulLogin.executor": "Run",
     "TestNG.LoginTests.testunsuccessfulLogin.executor": "Run",
     "TestNG.LoginTests.testunsuccessfulLogin_incorrectEmail.executor": "Run",
+    "TestNG.SignUpTest.executor": "Run",
+    "TestNG.SignUpTest.testAllValidData.executor": "Run",
+    "TestNG.SignUpTest.testEmptyFirstName.executor": "Run",
     "TestNG.SignUpTest.testEnterWronOTP.executor": "Run",
+    "TestNG.SignUpTest.testFirstNameLessThan2.executor": "Run",
     "TestNG.SignUpTest.testSuccessfulSignUp.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "eb9e90fc",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/baianat/IdeaProjects/Classes_Hub/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
@@ -71,8 +165,8 @@
       <recent name="$PROJECT_DIR$/src/test/resources/TestDataFiles" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SignUpTest.testSuccessfulSignUp">
-    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.SignUpTest.testEmptyLastName">
+    <configuration name="SignUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Classes_Hub" />
       <extension name="coverage">
         <pattern>
@@ -81,7 +175,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TestPackage" />
-      <option name="MAIN_CLASS_NAME" value="TestPackage.LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.SignUpTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -89,7 +183,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.testSuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTest.testAllValidData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Classes_Hub" />
       <extension name="coverage">
         <pattern>
@@ -97,45 +191,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Login" />
-      <option name="MAIN_CLASS_NAME" value="TestPackage.LoginTests" />
-      <option name="METHOD_NAME" value="testSuccessfulLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests.testunsuccessfulLogin_incorrectEmail" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Classes_Hub" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TestPackage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Login" />
-      <option name="MAIN_CLASS_NAME" value="TestPackage.LoginTests" />
-      <option name="METHOD_NAME" value="testunsuccessfulLogin_incorrectEmail" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTest.testEnterWronOTP" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Classes_Hub" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TestPackage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SignUp" />
+      <option name="PACKAGE_NAME" value="TestPackage" />
       <option name="MAIN_CLASS_NAME" value="TestPackage.SignUpTest" />
-      <option name="METHOD_NAME" value="testEnterWronOTP" />
+      <option name="METHOD_NAME" value="testAllValidData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -143,7 +201,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTest.testSuccessfulSignUp" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTest.testEmptyFirstName" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Classes_Hub" />
       <extension name="coverage">
         <pattern>
@@ -151,9 +209,45 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SignUp" />
+      <option name="PACKAGE_NAME" value="TestPackage" />
       <option name="MAIN_CLASS_NAME" value="TestPackage.SignUpTest" />
-      <option name="METHOD_NAME" value="testSuccessfulSignUp" />
+      <option name="METHOD_NAME" value="testEmptyFirstName" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpTest.testEmptyLastName" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Classes_Hub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestPackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestPackage" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.SignUpTest" />
+      <option name="METHOD_NAME" value="testEmptyLastName" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpTest.testFirstNameLessThan2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Classes_Hub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestPackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestPackage" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.SignUpTest" />
+      <option name="METHOD_NAME" value="testFirstNameLessThan2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -163,11 +257,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SignUpTest.testSuccessfulSignUp" />
-        <item itemvalue="TestNG.SignUpTest.testEnterWronOTP" />
-        <item itemvalue="TestNG.LoginTests.testunsuccessfulLogin_incorrectEmail" />
-        <item itemvalue="TestNG.LoginTests" />
-        <item itemvalue="TestNG.LoginTests.testSuccessfulLogin" />
+        <item itemvalue="TestNG.SignUpTest.testEmptyLastName" />
+        <item itemvalue="TestNG.SignUpTest" />
+        <item itemvalue="TestNG.SignUpTest.testEmptyFirstName" />
+        <item itemvalue="TestNG.SignUpTest.testAllValidData" />
+        <item itemvalue="TestNG.SignUpTest.testFirstNameLessThan2" />
       </list>
     </recent_temporary>
   </component>

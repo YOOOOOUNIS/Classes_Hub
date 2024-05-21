@@ -28,7 +28,7 @@ public class OTPpage {
 
 
 
-    public SecureAreaPage enterRightOTP(){
+    public void enterRightOTP(){
         //        wait till the component shows up & send the first number
         explicitWait(driver, 10).until(ExpectedConditions.elementToBeClickable(firstNumber));
         driver.findElement(firstNumber).sendKeys("1");
@@ -42,10 +42,10 @@ public class OTPpage {
         //        send the forth number
         driver.findElement(forthNumber).sendKeys("4");
 
-        return new SecureAreaPage(driver);
+//        return new SecureAreaPage(driver);
     }
 
-    public SecureAreaPage enterWrongOTP(){
+    public void enterWrongOTP(){
         //        wait till the component shows up & send the first number
         explicitWait(driver, 10).until(ExpectedConditions.elementToBeClickable(firstNumber));
         driver.findElement(firstNumber).sendKeys("1");
@@ -59,7 +59,8 @@ public class OTPpage {
         //        send the forth number
         driver.findElement(forthNumber).sendKeys("1");
 
-        return new SecureAreaPage(driver);
+//        return new (driver);
+
     }
 
 

@@ -27,7 +27,8 @@ public class BaseTests {
         homePage = new HomePage(driver);
     }
 
-
+//    @BeforeMethod
+//    public void BackToHome(){driver.get(url);}
 
     @AfterMethod
     public void closeBrowser() {
