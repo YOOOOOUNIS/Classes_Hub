@@ -63,7 +63,6 @@ public class SignUpPage {
         Assert.isTrue(explicitWait(driver, 10).
                 until(ExpectedConditions.elementToBeClickable(FirstNameErrorElement)).getText().contains("First name is a required field"),
                 "Empty first name scenario is corrupted");
-
     }
 
     public void AssertOnLessThan2FirstNameError (){
@@ -71,7 +70,6 @@ public class SignUpPage {
         Assert.isTrue(explicitWait(driver, 10).
                         until(ExpectedConditions.elementToBeClickable(FirstNameErrorElement)).getText().contains("First name must be at least 2 characters"),
                 "first name less than 2 ch. scenario is corrupted");
-
     }
 
     public void AssertOnMoreThan25FirstNameError (){
@@ -79,7 +77,6 @@ public class SignUpPage {
         Assert.isTrue(explicitWait(driver, 10).
                         until(ExpectedConditions.elementToBeClickable(FirstNameErrorElement)).getText().contains("First name must be at most 25 characters"),
                 "first name more than 25 ch. scenario is corrupted");
-
     }
 
     public void AssertOnFirstnameWithNumbersError (){
@@ -87,7 +84,6 @@ public class SignUpPage {
         Assert.isTrue(explicitWait(driver, 10).
                         until(ExpectedConditions.elementToBeClickable(FirstNameErrorElement)).getText().contains("Name should only contain alphabetic charachters"),
                 "first name with numbers scenario is corrupted");
-
     }
 
     public void AssertOnFirstnameWithSpecialCHError (){
@@ -95,7 +91,6 @@ public class SignUpPage {
         Assert.isTrue(explicitWait(driver, 10).
                         until(ExpectedConditions.elementToBeClickable(FirstNameErrorElement)).getText().contains("Name should only contain alphabetic charachters"),
                 "first name with Special ch. scenario is corrupted");
-
     }
 
 
@@ -109,7 +104,6 @@ public class SignUpPage {
         Assert.isTrue(explicitWait(driver, 10).
                         until(ExpectedConditions.elementToBeClickable(LastNameErrorElement)).getText().contains("Last name is a required field"),
                 "Empty last name scenario is corrupted");
-
     }
 
     public void AssertOnLessThan2LastNameError (){
@@ -117,7 +111,6 @@ public class SignUpPage {
         Assert.isTrue(explicitWait(driver, 10).
                         until(ExpectedConditions.elementToBeClickable(LastNameErrorElement)).getText().contains("Last name must be at least 2 characters"),
                 "Last name less than 2 ch. scenario is corrupted");
-
     }
 
     public void AssertOnMoreThan25LastNameError (){
@@ -125,7 +118,6 @@ public class SignUpPage {
         Assert.isTrue(explicitWait(driver, 10).
                         until(ExpectedConditions.elementToBeClickable(LastNameErrorElement)).getText().contains("Last name must be at most 25 characters"),
                 "Last name more than 25 ch. scenario is corrupted");
-
     }
 
     public void AssertOnLastnameWithNumbersError (){
@@ -133,7 +125,6 @@ public class SignUpPage {
         Assert.isTrue(explicitWait(driver, 10).
                         until(ExpectedConditions.elementToBeClickable(LastNameErrorElement)).getText().contains("Name should only contain alphabetic charachters"),
                 "Last name with numbers scenario is corrupted");
-
     }
 
     public void AssertOnLastnameWithSpecialCHError (){
@@ -141,6 +132,33 @@ public class SignUpPage {
         Assert.isTrue(explicitWait(driver, 10).
                         until(ExpectedConditions.elementToBeClickable(LastNameErrorElement)).getText().contains("Name should only contain alphabetic charachters"),
                 "Last name with Special ch. scenario is corrupted");
+    }
 
+//            Assertion on email error msg. element ___________________________________________________________________________________________________________
+
+
+    private By EmailErrorElement = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[2]/form/div[2]/p");
+
+    public void AssertOnEmptyِEmailError (){
+
+        Assert.isTrue(explicitWait(driver, 10).
+                        until(ExpectedConditions.elementToBeClickable(EmailErrorElement)).getText().contains("Email address is a required field"),
+                "Empty email scenario is corrupted");
+    }
+
+
+    public void AssertOnEmailFormError (){
+
+        Assert.isTrue(explicitWait(driver, 10).
+                        until(ExpectedConditions.elementToBeClickable(EmailErrorElement)).getText().contains("Email address must be a valid email"),
+                "Email format scenario is corrupted");
+    }
+
+
+    public void AssertOnEmailRegisteredError (){
+
+        Assert.isTrue(explicitWait(driver, 10).
+                        until(ExpectedConditions.elementToBeClickable(EmailErrorElement)).getText().contains("An account with this Email already exists please try to sign in instead"),
+                "Email registered before scenario is corrupted");
     }
 }
