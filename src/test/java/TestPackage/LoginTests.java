@@ -5,6 +5,11 @@ import base.BaseTests;
 import io.qameta.allure.Step;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.File;
+import java.io.IOException;
+
+import java.util.List;
 
 
 public class LoginTests extends BaseTests {
@@ -33,4 +38,8 @@ public class LoginTests extends BaseTests {
         loginPage.setPasswordField("Test@1234");
         loginPage.submitLoginButton();
     }
+
+
+
+
 }

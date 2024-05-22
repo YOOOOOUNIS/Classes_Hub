@@ -1,4 +1,14 @@
 {
-  "username" : "younis@baianat.com",
-  "password" : "Test@1234"
+  "testCases": [
+    {
+      "id": 1,
+      "description": "Test case 1",
+      "expectedResult": "Pass"
+    },
+    {
+      "id": 2,
+      "description": "Test case 2",
+      "expectedResult": "Fail"
+    }
+  ]
 }

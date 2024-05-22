@@ -1,10 +1,12 @@
 package base;
-
 import Pages.HomePage;
-import Pages.LoginPage;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
 import java.util.Random;
 
 public class BaseTests {
@@ -70,4 +72,97 @@ public class BaseTests {
         public static String randomEmail = generateRandomEmail();
 
     }
+
+//
+//
+//    public class TestCase {
+//        private int id;
+//        private String description;
+//        private String expectedResult;
+//
+//        // Getters and Setters
+//        public int getId() {
+//            return id;
+//        }
+//
+//        public void setId(int id) {
+//            this.id = id;
+//        }
+//
+//        public String getDescription() {
+//            return description;
+//        }
+//
+//        public void setDescription(String description) {
+//            this.description = description;
+//        }
+//
+//        public String getExpectedResult() {
+//            return expectedResult;
+//        }
+//
+//        public void setExpectedResult(String expectedResult) {
+//            this.expectedResult = expectedResult;
+//        }
+//
+//        @Override
+//        public String toString() {
+//            return "TestCase{" +
+//                    "id=" + id +
+//                    ", description='" + description + '\'' +
+//                    ", expectedResult='" + expectedResult + '\'' +
+//                    '}';
+//        }
+//    }
+//
+//    public class TestData {
+//        private List<TestCase> testCases;
+//
+//        // Getter and Setter
+//        public List<TestCase> getTestCases() {
+//            return testCases;
+//        }
+//
+//        public void setTestCases(List<TestCase> testCases) {
+//            this.testCases = testCases;
+//        }
+//
+//        @Override
+//        public String toString() {
+//            return "TestData{" +
+//                    "testCases=" + testCases +
+//                    '}';
+//        }
+//    }
+//
+//
+//    public class TestDataImporter {
+//
+//        public static TestData importTestData(String filePath) {
+//            ObjectMapper objectMapper = new ObjectMapper();
+//            TestData testData = null;
+//
+//            try {
+//                testData = objectMapper.readValue(new File(filePath), TestData.class);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//
+//            return testData;
+//        }
+//
+//        public static void main(String[] args) {
+//            String filePath = "path/to/your/testdata.json";
+//            TestData testData = importTestData(filePath);
+//
+//            if (testData != null) {
+//                for (TestCase testCase : testData.getTestCases()) {
+//                    System.out.println(testCase);
+//                }
+//            }
+//        }
+//    }
+
+
+
 }
