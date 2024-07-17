@@ -161,4 +161,48 @@ public class SignUpPage {
                         until(ExpectedConditions.elementToBeClickable(EmailErrorElement)).getText().contains("An account with this Email already exists please try to sign in instead"),
                 "Email registered before scenario is corrupted");
     }
+
+//                Assertion on password error msg. element ___________________________________________________________________________________________________________
+
+
+    private By passwordErrorElement = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[2]/form/div[3]/p");
+    public void AssertOnEmptyPasswordError (){
+
+        Assert.isTrue(explicitWait(driver, 10).
+                        until(ExpectedConditions.elementToBeClickable(passwordErrorElement)).getText().contains("Password is a required field"),
+                "Empty password scenario is corrupted");
+    }
+
+
+    public void AssertOnLessThan8PasswordError (){
+
+        Assert.isTrue(explicitWait(driver, 10).
+                        until(ExpectedConditions.elementToBeClickable(passwordErrorElement)).getText().contains("Password must be at least 8 characters"),
+                "password less than 8 ch. scenario is corrupted");
+    }
+
+
+    public void AssertOnMoreThan25PasswordError (){
+
+        Assert.isTrue(explicitWait(driver, 10).
+                        until(ExpectedConditions.elementToBeClickable(passwordErrorElement)).getText().contains("Password must be at most 25 characters"),
+                "password more than 25 ch. scenario is corrupted");
+    }
+
+
+    public void AssertOnLettersOnlyPasswordError (){
+
+        Assert.isTrue(explicitWait(driver, 10).
+                        until(ExpectedConditions.elementToBeClickable(passwordErrorElement)).getText().contains(" no "),
+                "password with letters only scenario is corrupted");
+    }
+
+
+    public void AssertOnNumbersOnlyPasswordError (){
+
+        Assert.isTrue(explicitWait(driver, 10).
+                        until(ExpectedConditions.elementToBeClickable(passwordErrorElement)).getText().contains("Password should contain at least one letter"),
+                "password with numbers only scenario is corrupted");
+    }
+
 }

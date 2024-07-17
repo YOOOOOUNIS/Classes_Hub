@@ -9,7 +9,6 @@ import static base.BaseTests.RandomEmailGenerator.randomEmail;
 
 public class SignUpTest extends BaseTests {
 
-
     @Test
     public void testAllValidData() {
         LoginPage loginPage = homePage.clickLoginButton();
@@ -21,7 +20,6 @@ public class SignUpTest extends BaseTests {
         OTPpage otpPage = signUpPage.clickOnsubmitSignUpButton();
         otpPage.enterRightOTP();
         homePage.verifyThatHomePageIsLoaded();
-
     }
 
 //    test first name validation ________________________________
@@ -30,7 +28,7 @@ public class SignUpTest extends BaseTests {
     public void testEmptyFirstName() {
         LoginPage loginPage = homePage.clickLoginButton();
         SignUpPage signUpPage = loginPage.clickSignUp();
-        signUpPage.setFirstnameField("              ");
+        signUpPage.setFirstnameField("");
         signUpPage.setLastNameField("VALID last name");
         signUpPage.setEmailAddressField(randomEmail);
         signUpPage.setpasswordField("Test@1234");
@@ -172,6 +170,7 @@ public class SignUpTest extends BaseTests {
         signUpPage.AssertOnEmptyِEmailError();
     }
 
+
     @Test
     public void testInvalidFormEmail() {
         LoginPage loginPage = homePage.clickLoginButton();
@@ -184,6 +183,7 @@ public class SignUpTest extends BaseTests {
         signUpPage.AssertOnEmailFormError();
     }
 
+
     @Test
     public void testRegisteredEmail() {
         LoginPage loginPage = homePage.clickLoginButton();
@@ -195,18 +195,100 @@ public class SignUpTest extends BaseTests {
         signUpPage.clickOnsubmitSignUpButton();
         signUpPage.AssertOnEmailRegisteredError();
     }
-//    @Test
-//    public void testEnterWronOTP() {
-//        LoginPage loginPage = homePage.clickLoginButton();
-//        SignUpPage signUpPage = loginPage.clickSignUp();
-//        signUpPage.setFirstnameField("VALID first name");
-//        signUpPage.setLastNameField("VALID last name");
-//        signUpPage.setEmailAddressField(randomEmail);
-//        signUpPage.setpasswordField("Test@1234");
-//        OTPpage otpPage = signUpPage.clickOnsubmitSignUpButton();
-//        otpPage.enterWrongOTP();
-//        assertFalse(driver.findElement(By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[1]/div[1]/div/p")).getText().contains("Invalid OTP, Please try again"),
-//                "Alert message is incorrect");
-//    }
+
+//            test password validation ________________________________
+
+
+    @Test
+    public void testEmptyPassword() {
+        LoginPage loginPage = homePage.clickLoginButton();
+        SignUpPage signUpPage = loginPage.clickSignUp();
+        signUpPage.setFirstnameField("VALID first name");
+        signUpPage.setLastNameField("VALID last name");
+        signUpPage.setEmailAddressField(randomEmail);
+        signUpPage.setpasswordField("");
+        signUpPage.clickOnsubmitSignUpButton();
+        signUpPage.AssertOnEmptyPasswordError();
+    }
+
+
+    @Test
+    public void testPasswordLessThan8() {
+        LoginPage loginPage = homePage.clickLoginButton();
+        SignUpPage signUpPage = loginPage.clickSignUp();
+        signUpPage.setFirstnameField("VALID first name");
+        signUpPage.setLastNameField("VALID last name");
+        signUpPage.setEmailAddressField(randomEmail);
+        signUpPage.setpasswordField("Test@12");
+        signUpPage.clickOnsubmitSignUpButton();
+        signUpPage.AssertOnLessThan8PasswordError();
+    }
+
+
+    @Test
+    public void testPasswordMoreThan25() {
+        LoginPage loginPage = homePage.clickLoginButton();
+        SignUpPage signUpPage = loginPage.clickSignUp();
+        signUpPage.setFirstnameField("VALID first name");
+        signUpPage.setLastNameField("VALID last name");
+        signUpPage.setEmailAddressField(randomEmail);
+        signUpPage.setpasswordField("Test@123456789000000000000");
+        signUpPage.clickOnsubmitSignUpButton();
+        signUpPage.AssertOnMoreThan25PasswordError();
+    }
+
+
+    @Test
+    public void testPasswordWithLettersOnly() {
+        LoginPage loginPage = homePage.clickLoginButton();
+        SignUpPage signUpPage = loginPage.clickSignUp();
+        signUpPage.setFirstnameField("VALID first name");
+        signUpPage.setLastNameField("VALID last name");
+        signUpPage.setEmailAddressField(randomEmail);
+        signUpPage.setpasswordField("Testingg");
+        signUpPage.clickOnsubmitSignUpButton();
+        signUpPage.AssertOnLettersOnlyPasswordError();
+    }
+
+
+    @Test
+    public void testPasswordWithNumbersOnly() {
+        LoginPage loginPage = homePage.clickLoginButton();
+        SignUpPage signUpPage = loginPage.clickSignUp();
+        signUpPage.setFirstnameField("VALID first name");
+        signUpPage.setLastNameField("VALID last name");
+        signUpPage.setEmailAddressField(randomEmail);
+        signUpPage.setpasswordField("123456789");
+        signUpPage.clickOnsubmitSignUpButton();
+        signUpPage.AssertOnNumbersOnlyPasswordError();
+    }
+
+
+    @Test
+    public void testEmptyOTP() {
+        LoginPage loginPage = homePage.clickLoginButton();
+        SignUpPage signUpPage = loginPage.clickSignUp();
+        signUpPage.setFirstnameField("VALID first name");
+        signUpPage.setLastNameField("VALID last name");
+        signUpPage.setEmailAddressField(randomEmail);
+        signUpPage.setpasswordField("Test@1234");
+        OTPpage otpPage = signUpPage.clickOnsubmitSignUpButton();
+        otpPage.clickOnVerifyOTP();
+        otpPage.AssertOnEmptyOTPError();
+    }
+
+
+    @Test
+    public void testWrongOTP() {
+        LoginPage loginPage = homePage.clickLoginButton();
+        SignUpPage signUpPage = loginPage.clickSignUp();
+        signUpPage.setFirstnameField("VALID first name");
+        signUpPage.setLastNameField("VALID last name");
+        signUpPage.setEmailAddressField(randomEmail);
+        signUpPage.setpasswordField("Test@1234");
+        OTPpage otpPage = signUpPage.clickOnsubmitSignUpButton();
+        otpPage.enterWrongOTP();
+        otpPage.AssertOnWrongOTPError();
+    }
 
 }
