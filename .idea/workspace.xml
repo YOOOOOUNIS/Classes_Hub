@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27848403-1f6e-4ec5-ad68-f3c7bec9636e" name="Changes" comment="Handle test cases for test sign up flow">
+    <list default="true" id="27848403-1f6e-4ec5-ad68-f3c7bec9636e" name="Changes" comment="update: complete sign up flow">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/lecturerSignUpPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/OTPpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/OTPpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/SignUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716306735295</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update: complete sign up flow">
+      <option name="closed" value="true" />
+      <created>1721223924678</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721223924678</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,7 +251,8 @@
     <MESSAGE value="Test unsuccessful login" />
     <MESSAGE value="initializing sign up flow and OTP flow" />
     <MESSAGE value="Handle test cases for test sign up flow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Handle test cases for test sign up flow" />
+    <MESSAGE value="update: complete sign up flow" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: complete sign up flow" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
