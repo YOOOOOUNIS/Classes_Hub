@@ -1,10 +1,8 @@
 package Pages;
-
 import dev.failsafe.internal.util.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
 import static utils.Helper.explicitWait;
 
 public class SignUpPage {

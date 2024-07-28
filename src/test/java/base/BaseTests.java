@@ -14,10 +14,8 @@ public class BaseTests {
     protected HomePage homePage;
 
 
-//    site url
+    //    site url
     private static String url = "https://staging.classeshub.com/";
-
-
 
 
     @BeforeMethod
@@ -38,11 +36,9 @@ public class BaseTests {
     }
 
 
-
-
-//    create random email
+    //    create random email
     public class RandomEmailGenerator {
-        private static final String[] domains = {"gmail.com", "yahoo.com", "hotmail.com",  "outlook.com"};
+        private static final String[] domains = {"gmail.com", "yahoo.com", "hotmail.com", "outlook.com"};
         private static final String[] characters = {"abcdefghijklmnopqrstuvwxyz", "0123456789"};
 
 
@@ -69,9 +65,38 @@ public class BaseTests {
             return email;
         }
 
+
         public static String randomEmail = generateRandomEmail();
 
+
     }
+
+    public class RandomPhoneNumberGenerator {
+        private static final String[] PREFIXES = {"010", "012", "015"};
+
+        public static void main(String[] args) {
+            System.out.println(generateRandomPhoneNumber());
+        }
+
+        public static String generateRandomPhoneNumber() {
+            Random random = new Random();
+            String prefix = PREFIXES[random.nextInt(PREFIXES.length)];
+            StringBuilder phoneNumber = new StringBuilder(prefix);
+
+            for (int i = 0; i < 8; i++) {
+                int digit = random.nextInt(10);
+                phoneNumber.append(digit);
+            }
+
+            return phoneNumber.toString();
+
+        }
+
+        public static String randomPhoneNumber = generateRandomPhoneNumber();
+
+    }
+
+}
 
 //
 //
@@ -162,7 +187,3 @@ public class BaseTests {
 //            }
 //        }
 //    }
-
-
-
-}

@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27848403-1f6e-4ec5-ad68-f3c7bec9636e" name="Changes" comment="update: complete sign up flow">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/lecturerSignUpPage.java" afterDir="false" />
+    <list default="true" id="27848403-1f6e-4ec5-ad68-f3c7bec9636e" name="Changes" comment="feat: lecturer sign up form in site">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestPackage/LecturerSignUpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SignUpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/lecturerSignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LecturerSignUpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +29,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -40,6 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.BaseTests.goHome.executor": "Run",
+    "TestNG.LecturerSignUpTest.testAllValidData.executor": "Run",
     "TestNG.LoginTests.executor": "Run",
     "TestNG.LoginTests.testSuccessfulLogin.executor": "Run",
     "TestNG.LoginTests.testunsuccessfulLogin.executor": "Run",
@@ -58,6 +67,7 @@
     "TestNG.SignUpTest.testPasswordMoreThan25.executor": "Run",
     "TestNG.SignUpTest.testSuccessfulSignUp.executor": "Run",
     "TestNG.SignUpTest.testWrongOTP.executor": "Run",
+    "TestNG.lecturerSignUpTest.testAllValidData.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/baianat/IdeaProjects/Classes_Hub/src/main/java/org/example/Main.java",
@@ -77,7 +87,25 @@
       <recent name="$PROJECT_DIR$/src/test/resources/TestDataFiles" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SignUpTest.testPasswordMoreThan25">
+  <component name="RunManager" selected="TestNG.LecturerSignUpTest.testAllValidData">
+    <configuration name="LecturerSignUpTest.testAllValidData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Classes_Hub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestPackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestPackage" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.LecturerSignUpTest" />
+      <option name="METHOD_NAME" value="testAllValidData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SignUpTest$AllValidData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Classes_Hub" />
       <extension name="coverage">
@@ -88,23 +116,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="TestPackage.SignUpTest" />
       <option name="MAIN_CLASS_NAME" value="TestPackage.SignUpTest$AllValidData" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTest$testPassword" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Classes_Hub" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TestPackage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TestPackage.SignUpTest" />
-      <option name="MAIN_CLASS_NAME" value="TestPackage.SignUpTest$testPassword" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -168,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LecturerSignUpTest.testAllValidData" />
         <item itemvalue="TestNG.SignUpTest.testPasswordMoreThan25" />
         <item itemvalue="TestNG.SignUpTest.testWrongOTP" />
         <item itemvalue="TestNG.SignUpTest.testEmptyOTP" />
         <item itemvalue="TestNG.SignUpTest$AllValidData" />
-        <item itemvalue="TestNG.SignUpTest$testPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721223924678</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: lecturer sign up form in site">
+      <option name="closed" value="true" />
+      <created>1721228839700</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721228839700</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,7 +271,8 @@
     <MESSAGE value="initializing sign up flow and OTP flow" />
     <MESSAGE value="Handle test cases for test sign up flow" />
     <MESSAGE value="update: complete sign up flow" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: complete sign up flow" />
+    <MESSAGE value="feat: lecturer sign up form in site" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: lecturer sign up form in site" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

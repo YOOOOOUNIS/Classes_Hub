@@ -1,18 +1,10 @@
 package TestPackage;
-import Pages.HomePage;
 import Pages.LoginPage;
 import base.BaseTests;
-import io.qameta.allure.Step;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import java.io.File;
-import java.io.IOException;
-
-import java.util.List;
 
 
-public class LoginTests extends BaseTests {
+public class LoginTest extends BaseTests {
 
 
     @Test
