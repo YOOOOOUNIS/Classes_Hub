@@ -1,5 +1,6 @@
 package utils;
 
+import org.apache.log4j.BasicConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -12,6 +13,8 @@ import java.io.IOException;
 
 public class Helper {
 
+
+
 //_______________________________________________________________________________________________________________________________________________________________
 
 //    Explicit wait
@@ -21,8 +24,6 @@ public class Helper {
     }
 
 //_______________________________________________________________________________________________________________________________________________________________
-
-
 
 
 

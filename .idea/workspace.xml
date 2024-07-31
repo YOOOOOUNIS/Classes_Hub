@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27848403-1f6e-4ec5-ad68-f3c7bec9636e" name="Changes" comment="feat: lecturer sign up form in site">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestPackage/LecturerSignUpTest.java" afterDir="false" />
+    <list default="true" id="27848403-1f6e-4ec5-ad68-f3c7bec9636e" name="Changes" comment="update: continue lecturer sign up form in site">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/lecturerSignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LecturerSignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LecturerSignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LecturerSignUpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/LecturerSignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/LecturerSignUpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +73,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "advanced.settings"
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
@@ -251,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721228839700</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update: continue lecturer sign up form in site">
+      <option name="closed" value="true" />
+      <created>1722186856331</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722186856331</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,7 +279,8 @@
     <MESSAGE value="Handle test cases for test sign up flow" />
     <MESSAGE value="update: complete sign up flow" />
     <MESSAGE value="feat: lecturer sign up form in site" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: lecturer sign up form in site" />
+    <MESSAGE value="update: continue lecturer sign up form in site" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: continue lecturer sign up form in site" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
