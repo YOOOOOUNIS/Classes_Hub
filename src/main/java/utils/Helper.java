@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class Helper {
 
-
+    public String testImage = new String("/Users/baianat/IdeaProjects/Classes_Hub/src/test/resources/TestDataFiles/testImage.png");
 
 //_______________________________________________________________________________________________________________________________________________________________
 

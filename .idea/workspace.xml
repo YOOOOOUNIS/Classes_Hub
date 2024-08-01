@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27848403-1f6e-4ec5-ad68-f3c7bec9636e" name="Changes" comment="update: continue lecturer sign up form in site">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/TestDataFiles/testImage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LecturerSignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LecturerSignUpPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Helper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/LecturerSignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/LecturerSignUpTest.java" afterDir="false" />
@@ -47,7 +47,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.BaseTests.goHome.executor": "Run",
-    "TestNG.LecturerSignUpTest.testAllValidData.executor": "Run",
+    "TestNG.LecturerSignUpTest.testAllValidData.executor": "Debug",
     "TestNG.LoginTests.executor": "Run",
     "TestNG.LoginTests.testSuccessfulLogin.executor": "Run",
     "TestNG.LoginTests.testunsuccessfulLogin.executor": "Run",
@@ -105,7 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTest$AllValidData" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTest.testAllValidData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Classes_Hub" />
       <extension name="coverage">
         <pattern>
@@ -113,9 +113,10 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TestPackage.SignUpTest" />
-      <option name="MAIN_CLASS_NAME" value="TestPackage.SignUpTest$AllValidData" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="TestPackage" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.SignUpTest" />
+      <option name="METHOD_NAME" value="testAllValidData" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -179,10 +180,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.LecturerSignUpTest.testAllValidData" />
+        <item itemvalue="TestNG.SignUpTest.testAllValidData" />
         <item itemvalue="TestNG.SignUpTest.testPasswordMoreThan25" />
         <item itemvalue="TestNG.SignUpTest.testWrongOTP" />
         <item itemvalue="TestNG.SignUpTest.testEmptyOTP" />
-        <item itemvalue="TestNG.SignUpTest$AllValidData" />
       </list>
     </recent_temporary>
   </component>
@@ -289,6 +290,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/TestPackage/LecturerSignUpTest.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

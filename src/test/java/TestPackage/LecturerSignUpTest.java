@@ -14,14 +14,20 @@ public class LecturerSignUpTest extends BaseTests {
     @Test
     public void testAllValidData() {
         LecturerSignUpPage lecturerSignUpPage = homePage.clickOnJoinAsLecturerButton();
-        lecturerSignUpPage.setFullNameInArabicField("الاسم بالكامل باللغة العربية صالح");
+        lecturerSignUpPage.setFullNameInArabicField("الاسم الكامل الصحيح باللغة العربية");
         lecturerSignUpPage.setFullNameInEnglishField("Valid full name in english");
         lecturerSignUpPage.setEmailAddressField(randomEmail);
         lecturerSignUpPage.setPhoneNumberField(randomPhoneNumber);
         lecturerSignUpPage.selectNationalityMenu();
         lecturerSignUpPage.selectCountryMenu();
-//        lecturerSignUpPage.selectFieldOfTrainingMenu("ex");
-//        lecturerSignUpPage.clickOnSubmitLecturerSignUp();
+        lecturerSignUpPage.selectFieldOfTrainingMenu();
+        lecturerSignUpPage.setTrainingExperienceField("10");
+        lecturerSignUpPage.selectJobTitleMenu();
+        lecturerSignUpPage.setLinkedInURLfield("https://www.linkedin.com/in/abdelrahman-younis-47b863286");
+        lecturerSignUpPage.setFacebookURLfield("https://www.facebook.com/abdoyounis32?mibextid=ZbWKwL");
+        lecturerSignUpPage.setCVfield();
+
+        lecturerSignUpPage.clickOnSubmitLecturerSignUp();
     }
 
 }

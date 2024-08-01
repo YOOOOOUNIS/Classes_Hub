@@ -19,6 +19,8 @@ public class BaseTests {
     private static String url = "https://staging.classeshub.com/";
 
 
+
+
     @BeforeMethod
     public void goHome() {
 
