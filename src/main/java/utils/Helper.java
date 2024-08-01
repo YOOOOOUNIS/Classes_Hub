@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class Helper {
 
-    public String testImage = new String("/Users/baianat/IdeaProjects/Classes_Hub/src/test/resources/TestDataFiles/testImage.png");
+    public String testImage = "src/test/resources/TestDataFiles/testImage.png";
 
 //_______________________________________________________________________________________________________________________________________________________________
 
@@ -23,7 +23,11 @@ public class Helper {
         return new WebDriverWait(driver, Duration.ofSeconds(sec));
     }
 
+
 //_______________________________________________________________________________________________________________________________________________________________
+
+
+
 
 
 
