@@ -23,7 +23,6 @@ public class LecturerSignUpTest extends BaseTests {
         lecturerSignUpPage.setLinkedInURLfield("https://www.linkedin.com/in/abdelrahman-younis-47b863286");
         lecturerSignUpPage.setFacebookURLfield("https://www.facebook.com/abdoyounis32?mibextid=ZbWKwL");
         lecturerSignUpPage.setCVattachmentField();
-
         lecturerSignUpPage.clickOnSubmitLecturerSignUp();
     }
 

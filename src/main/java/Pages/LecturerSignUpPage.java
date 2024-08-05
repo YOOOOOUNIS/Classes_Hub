@@ -1,10 +1,15 @@
 package Pages;
 import org.openqa.selenium.*;
-import org.openqa.selenium.bidi.log.Log;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.logging.Logs;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import utils.Helper;
+//import static java.lang.Thread.sleep;
+import java.awt.*;
+import java.io.File;
+import java.util.List;
+import java.util.logging.Level;
+
+import static utils.Helper.LoggerSetup.logger;
 
 
 public class LecturerSignUpPage extends Helper {
@@ -22,9 +27,11 @@ public class LecturerSignUpPage extends Helper {
     private By jobTitleDropDownMenu = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[2]/div/div[2]/div/form/div[5]/div[5]/div/div");
     private By linkedInURLfield = By.id("linkedInUrl");
     private By facebookURLfield = By.id("facebookUrl");
-    private By CVfield = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[2]/div/div[2]/div/form/div[8]/div[1]");
-    private By Xicon = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[2]/div/div[2]/div/form/div[8]/div/div/div/svg/path");
+    private By CVfield = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[2]/div/div[2]/div/form/div[8]/div/input");
+    private By ErrorMessage = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[2]/div/div[2]/div/form/div[8]/div[2]/p");
     private By submitLecturerSignUpButton = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[2]/div/div[2]/div/form/div[9]/button");
+
+
 
 
     public LecturerSignUpPage(WebDriver driver) { this.driver = driver; }
@@ -101,25 +108,18 @@ public class LecturerSignUpPage extends Helper {
     }
 
     public void setCVattachmentField(){
-//        explicitWait(driver, 10).until(ExpectedConditions.elementToBeClickable(CVfield));
-//        driver.findElement(CVfield).click();
 
+        driver.findElement(CVfield).sendKeys(testImagePath);
 
-
-            explicitWait(driver, 10).until(ExpectedConditions.elementToBeClickable(CVfield));
-            driver.findElement(CVfield).sendKeys(testImage);
-
-//        explicitWait(driver, 10).until(ExpectedConditions.elementToBeClickable(CVfield));
-//        driver.findElement(CVfield).sendKeys(Keys.ARROW_RIGHT, Keys.ENTER);
-
-
-//        WebElement fileInput = driver.findElement(CVfield);
-//        fileInput.sendKeys(uploadFile.getAbsolutePath());
-//        driver.findElement(By.id("file-submit")).click();
     }
 
     public void clickOnSubmitLecturerSignUp(){
-        explicitWait(driver, 10).until(ExpectedConditions.elementToBeClickable(submitLecturerSignUpButton));
+
+//        click on submit button to show up error message
+        driver.findElement(submitLecturerSignUpButton).click();
+
+//        wait until file get uploaded and error message gone away to execute submit request
+        explicitWait(driver, 10).until(ExpectedConditions.invisibilityOfElementWithText(ErrorMessage,"Upload your CV is a required field"));
         driver.findElement(submitLecturerSignUpButton).click();
     }
 
