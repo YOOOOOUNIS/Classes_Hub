@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import static utils.Helper.explicitWait;
 
+
+
 public class SignUpPage {
 
     private WebDriver driver;
@@ -50,6 +52,7 @@ public class SignUpPage {
     }
 
 
+//    Assertions
 //    Assertion on first name error msg. element ___________________________________________________________________________________________________________
 
     private By FirstNameErrorElement = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[2]/form/div[1]/div[1]/div/p");

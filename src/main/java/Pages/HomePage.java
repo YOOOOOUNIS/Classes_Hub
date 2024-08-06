@@ -1,12 +1,13 @@
 package Pages;
-
 import dev.failsafe.internal.util.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
-
 import static utils.Helper.explicitWait;
+
+
+
 
 public class HomePage {
 
@@ -27,6 +28,7 @@ public class HomePage {
 
 
     public void verifyThatHomePageIsLoaded(){
+//        assert on home page after user sign up process has completed
         Assert.isTrue(explicitWait(driver, 10).
                         until(ExpectedConditions.elementToBeClickable(HomePageCheckElement)).getText().contains(" grow and advance in design"),
                 "ALL VALID DATA scenario is corrupted");
@@ -39,9 +41,17 @@ public class HomePage {
     }
 
     public LecturerSignUpPage clickOnJoinAsLecturerButton(){
+
+//        scroll down to join as lecturer button
+        Actions actions = new Actions(driver);
+        actions.scrollByAmount(0,5000);
+        actions.perform();
+
+//        click on join as lecturer button
         explicitWait(driver,10).until(ExpectedConditions.elementToBeClickable(joinAsLecturerButton));
         driver.findElement(joinAsLecturerButton).click();
         return new LecturerSignUpPage(driver);
+
     }
 
 }

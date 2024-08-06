@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27848403-1f6e-4ec5-ad68-f3c7bec9636e" name="Changes" comment="feat: continue lecturer sign up form in site ـ add upload image">
+    <list default="true" id="27848403-1f6e-4ec5-ad68-f3c7bec9636e" name="Changes" comment="fix: fix image uploader in lecturer sign up form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LecturerSignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LecturerSignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/OTPpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/OTPpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SignUpPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/LecturerSignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/LecturerSignUpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.BaseTests.goHome.executor": "Run",
-    "TestNG.LecturerSignUpTest.testAllValidData.executor": "Run",
+    "TestNG.LecturerSignUpTest.testAllValidData.executor": "Debug",
     "TestNG.LoginTests.executor": "Run",
     "TestNG.LoginTests.testSuccessfulLogin.executor": "Run",
     "TestNG.LoginTests.testunsuccessfulLogin.executor": "Run",
@@ -276,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722531910123</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix: fix image uploader in lecturer sign up form">
+      <option name="closed" value="true" />
+      <created>1722871143905</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722871143905</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,7 +311,19 @@
     <MESSAGE value="update: continue lecturer sign up form in site" />
     <MESSAGE value="update: continue lecturer sign up form in site ـ add drop down menu" />
     <MESSAGE value="feat: continue lecturer sign up form in site ـ add upload image" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: continue lecturer sign up form in site ـ add upload image" />
+    <MESSAGE value="fix: fix image uploader in lecturer sign up form" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fix image uploader in lecturer sign up form" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/TestPackage/LecturerSignUpTest.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Classes_Hub$LecturerSignUpTest_testAllValidData.ic" NAME="LecturerSignUpTest.testAllValidData Coverage Results" MODIFIED="1722779896064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

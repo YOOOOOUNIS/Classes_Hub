@@ -3,13 +3,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import utils.Helper;
-//import static java.lang.Thread.sleep;
-import java.awt.*;
-import java.io.File;
-import java.util.List;
-import java.util.logging.Level;
-
-import static utils.Helper.LoggerSetup.logger;
 
 
 public class LecturerSignUpPage extends Helper {
@@ -58,10 +51,6 @@ public class LecturerSignUpPage extends Helper {
     }
 
     public void selectNationalityMenu(){
-//        WebElement dropDownElement = explicitWait(driver, 10).until(ExpectedConditions.elementToBeClickable(nationalityField));
-//        driver.findElement(nationalityField);
-//        Select dropDown = new Select(dropDownElement);
-//        dropDown.selectByVisibleText(nationality);
         WebElement selectMyElement = driver.findElement(nationalityDropDownMenu);
         selectMyElement.click();
 
@@ -86,6 +75,11 @@ public class LecturerSignUpPage extends Helper {
     }
 
     public void setTrainingExperienceField(String trainingExperience){
+
+        Actions actions = new Actions(driver);
+        actions.scrollByAmount(0,500);
+        actions.perform();
+
         explicitWait(driver, 10).until(ExpectedConditions.elementToBeClickable(trainingExperienceField));
         driver.findElement(trainingExperienceField).sendKeys(trainingExperience);
     }
@@ -113,14 +107,16 @@ public class LecturerSignUpPage extends Helper {
 
     }
 
-    public void clickOnSubmitLecturerSignUp(){
+    public OTPpage clickOnSubmitLecturerSignUp(){
 
-//        click on submit button to show up error message
+//        click on submit button before file get completely uploaded to show up error message
         driver.findElement(submitLecturerSignUpButton).click();
 
 //        wait until file get uploaded and error message gone away to execute submit request
         explicitWait(driver, 10).until(ExpectedConditions.invisibilityOfElementWithText(ErrorMessage,"Upload your CV is a required field"));
         driver.findElement(submitLecturerSignUpButton).click();
+
+        return new OTPpage(driver);
     }
 
 }

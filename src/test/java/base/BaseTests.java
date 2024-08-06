@@ -1,14 +1,12 @@
 package base;
 import Pages.HomePage;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.log4j.BasicConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
 import java.util.Random;
+
+
+
 
 public class BaseTests {
     public WebDriver driver;

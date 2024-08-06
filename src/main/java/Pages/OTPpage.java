@@ -1,11 +1,11 @@
 package Pages;
-
 import dev.failsafe.internal.util.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
 import static utils.Helper.explicitWait;
+
+
 
 public class OTPpage {
 
@@ -15,21 +15,16 @@ public class OTPpage {
 
     private WebDriver driver;
 
+
     private By firstNumber = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[2]/form/div[1]/div[1]/input");
-
     private By secondNumber = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[2]/form/div[1]/div[2]/input");
-
     private By thirdNumber = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[2]/form/div[1]/div[3]/input");
-
     private By forthNumber = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[2]/form/div[1]/div[4]/input");
-
     private By verifyOTP = By.id("submit-verifyCode");
-
     private By OTPerrorElement = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[2]/form/div[2]/p");
-
     private By OTPerrorToast = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div[1]/div[1]/div/p");
-
     private By resendOTP = By.id("resendVerificationCode");
+    private By backToHome = By.xpath("//*[@id=\"__nuxt\"]/div/div[2]/div/div/div/a");
 
 
 
@@ -47,7 +42,7 @@ public class OTPpage {
         //        send the forth number
         driver.findElement(forthNumber).sendKeys("4");
 
-//        return new SecureAreaPage(driver);
+
     }
 
     public void enterWrongOTP(){
@@ -64,7 +59,6 @@ public class OTPpage {
         //        send the forth number
         driver.findElement(forthNumber).sendKeys("1");
 
-//        return new (driver);
 
     }
 
@@ -80,7 +74,14 @@ public class OTPpage {
         explicitWait(driver,10).
                 until(ExpectedConditions.elementToBeClickable(resendOTP)).click();
     }
-//*[@id="__nuxt"]/div/div[2]/div/div/div[1]/div[1]/div/p
+
+    public void backToHome (){
+        explicitWait(driver,10).
+                until(ExpectedConditions.elementToBeClickable(backToHome)).click();
+    }
+
+
+//    Assertions
 
     public void AssertOnEmptyOTPError (){
 
@@ -95,5 +96,6 @@ public class OTPpage {
                         until(ExpectedConditions.elementToBeClickable(OTPerrorToast)).getText().contains("Invalid OTP, Please try again"),
                 "Wrong OTP scenario is corrupted");
     }
+
 
 }
