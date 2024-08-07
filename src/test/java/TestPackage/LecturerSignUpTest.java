@@ -5,6 +5,7 @@ import base.BaseTests;
 import org.testng.annotations.Test;
 import static base.BaseTests.RandomEmailGenerator.randomEmail;
 import static base.BaseTests.RandomPhoneNumberGenerator.randomPhoneNumber;
+import static base.BaseTests.tempEmailGenerator.tempEmail;
 
 
 public class LecturerSignUpTest extends BaseTests {
@@ -14,7 +15,7 @@ public class LecturerSignUpTest extends BaseTests {
         LecturerSignUpPage lecturerSignUpPage = homePage.clickOnJoinAsLecturerButton();
         lecturerSignUpPage.setFullNameInArabicField("الاسم الكامل الصحيح باللغة العربية");
         lecturerSignUpPage.setFullNameInEnglishField("Valid full name in english");
-        lecturerSignUpPage.setEmailAddressField(randomEmail);
+        lecturerSignUpPage.setEmailAddressField(tempEmail);
         lecturerSignUpPage.setPhoneNumberField(randomPhoneNumber);
         lecturerSignUpPage.selectNationalityMenu();
         lecturerSignUpPage.selectCountryMenu();

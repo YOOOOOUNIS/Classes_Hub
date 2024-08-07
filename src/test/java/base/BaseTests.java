@@ -1,20 +1,24 @@
 package base;
 import Pages.HomePage;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 import java.util.Random;
+import java.util.Set;
 
-
+import static utils.Helper.explicitWait;
 
 
 public class BaseTests {
-    public WebDriver driver;
+    public static WebDriver driver;
     protected HomePage homePage;
 
 
     //    site url
     private static String url = "https://staging.classeshub.com/";
+
 
 
 
@@ -69,6 +73,53 @@ public class BaseTests {
 
         public static String randomEmail = generateRandomEmail();
 
+
+    }
+
+//    private static String tempMailUrl = "https://temp-mail.org/en/";
+
+
+
+    public class tempEmailGenerator {
+
+
+        public static String generateTempEmail() {
+
+            // Store the current window handle (first tab)
+            String originalTab = driver.getWindowHandle();
+
+            // Open a new tab using JavaScript
+            ((JavascriptExecutor) driver).executeScript("window.open('https://temp-mail.org/en/', '_blank');");
+            System.out.println("Opened a new tab");
+
+
+            // Store all window handles in a set
+            Set<String> allTabs = driver.getWindowHandles();
+
+            // Switch to the new tab (the one that is not the original)
+            for (String handle : allTabs) {
+                if (!handle.equals(originalTab)) {
+                    driver.switchTo().window(handle);
+                    System.out.println("Switched to the new tab");
+                    break;
+                }
+            }
+
+            // Perform actions on the new tab
+            explicitWait(driver, 5);
+            String email = driver.findElement(By.id("mail")).getAttribute("value");
+
+
+            // Switch back to the original tab
+            driver.switchTo().window(originalTab);
+            System.out.println("Switched back to the first tab");
+
+
+
+            return email;
+        }
+
+        public static String tempEmail = generateTempEmail();
 
     }
 
